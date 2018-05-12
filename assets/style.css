@@ -1,0 +1,114 @@
+.btn,
+.content .btn {
+  color: white;
+  background: black;
+  padding: 15px 30px;
+  display: inline-block;
+  text-align: center;
+  text-transform: uppercase;
+  transition: color 0.5s ease, background 0.5s ease;
+  letter-spacing: .125em;
+  margin: 2em 0; }
+  .btn.large,
+  .content .btn.large {
+    padding: 1em 3em;
+    font-size: 1.25em; }
+  .btn.centered,
+  .content .btn.centered {
+    margin: 2em auto;
+    display: table; }
+  .btn:hover,
+  .content .btn:hover {
+    background: gray;
+    color: white;
+    text-decoration: none; }
+
+.home-text-banner,
+.subpage-text-banner {
+  text-align: center; }
+  .home-text-banner .home-container,
+  .subpage-text-banner .home-container {
+    width: 100%;
+    background: gray; }
+  .home-text-banner .text,
+  .subpage-text-banner .text {
+    margin: 0 auto;
+    max-width: 80ch; }
+  .home-text-banner p,
+  .subpage-text-banner p {
+    font-size: 1.25em; }
+
+.section-cta {
+  margin-bottom: 80px;
+  text-align: center; }
+
+.subpage-text-banner {
+  height: auto; }
+  .subpage-text-banner .home-container {
+    height: auto; }
+
+.home-container {
+  position: relative;
+  height: 70vh;
+  min-height: 400px;
+  box-sizing: border-box;
+  position: relative;
+  padding: 60px calc(4vw + 30px);
+  display: flex;
+  align-items: center;
+  color: white; }
+
+@media only screen and (min-width: 1000px) {
+  .home-split-banner {
+    height: 70vh;
+    display: flex;
+    min-height: 400px; }
+  .home-container {
+    width: 50%;
+    justify-content: flex-end; } }
+
+.slideshow {
+  padding: 0; }
+
+.slides .slide-wrapper {
+  display: flex; }
+
+.slides.three-up .slide-wrapper {
+  height: 0;
+  padding-bottom: 22%;
+  overflow: hidden; }
+
+.slides a {
+  flex: 1; }
+
+.flex-direction-nav a {
+  opacity: .65; }
+
+.content {
+  padding: 80px 0 0; }
+
+.col {
+  margin-bottom: 80px; }
+
+.slideshow.testimonials {
+  margin-bottom: 80px; }
+  .slideshow.testimonials .flexslider .slides {
+    display: flex;
+    align-items: center; }
+  .slideshow.testimonials .slide-wrapper {
+    font-size: 1.5em; }
+  .slideshow.testimonials blockquote {
+    padding: 40px 80px;
+    text-align: center;
+    margin: 0 auto;
+    max-width: 50ch; }
+    .slideshow.testimonials blockquote small {
+      display: block;
+      font-size: .75em;
+      margin-top: 16px; }
+      .slideshow.testimonials blockquote small:before {
+        content: '- '; }
+
+.border-top {
+  border-top: 1px solid #c2c2c2;
+  padding-top: 60px; }

@@ -1,0 +1,16 @@
+node_modules
+Thumbs.db
+Desktop.ini
+_notes
+.svn
+.project
+.idea/
+.DS_Store
+.cvs
+*~
+*.tmproj
+*.swp
+*.sublime-workspace
+*.sublime-project
+*.bak
+.htaccess

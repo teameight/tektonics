@@ -1,0 +1,235 @@
+@import url("https://fonts.googleapis.com/css?family=Merriweather+Sans:300,400");
+@import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,400i,700");
+.btn,
+.content .btn {
+  color: white;
+  background: black;
+  padding: 15px 30px;
+  display: inline-block;
+  text-align: center;
+  text-transform: uppercase;
+  transition: color 0.5s ease, background 0.5s ease;
+  letter-spacing: .125em;
+  margin: 2em 0; }
+  .btn.large,
+  .content .btn.large {
+    padding: 1em 3em;
+    font-size: 1.25em; }
+  .btn.centered,
+  .content .btn.centered {
+    margin: 2em auto;
+    display: table; }
+  .btn:hover,
+  .content .btn:hover {
+    background: gray;
+    color: white;
+    text-decoration: none; }
+
+.home-text-banner,
+.subpage-text-banner {
+  text-align: center; }
+  .home-text-banner .home-container,
+  .subpage-text-banner .home-container {
+    width: 100%;
+    background: gray; }
+  .home-text-banner .text,
+  .subpage-text-banner .text {
+    margin: 0 auto;
+    max-width: 80ch; }
+  .home-text-banner p,
+  .subpage-text-banner p {
+    font-size: 1.25em; }
+
+.section-cta {
+  margin-bottom: 80px;
+  text-align: center; }
+
+.subpage-text-banner {
+  height: auto; }
+  .subpage-text-banner .home-container {
+    height: auto; }
+
+.home-container {
+  position: relative;
+  height: 70vh;
+  min-height: 400px;
+  box-sizing: border-box;
+  position: relative;
+  padding: 60px calc(4vw + 30px);
+  display: flex;
+  align-items: center;
+  color: white; }
+
+@media only screen and (min-width: 1000px) {
+  .home-split-banner {
+    height: 70vh;
+    display: flex;
+    min-height: 400px; }
+  .home-container {
+    width: 50%;
+    justify-content: flex-end; } }
+
+.slideshow {
+  padding: 0; }
+
+.slides .slide-wrapper {
+  display: flex; }
+
+.slides.three-up .slide-wrapper {
+  height: 0;
+  padding-bottom: 22%;
+  overflow: hidden; }
+
+.slides a {
+  flex: 1; }
+
+.flex-direction-nav a {
+  opacity: .65; }
+
+.content {
+  padding: 80px 0 0; }
+
+.col {
+  margin-bottom: 80px; }
+
+.slideshow.testimonials {
+  margin-bottom: 80px; }
+  .slideshow.testimonials .flexslider .slides {
+    display: flex;
+    align-items: center; }
+  .slideshow.testimonials .slide-wrapper {
+    font-size: 1.5em; }
+  .slideshow.testimonials blockquote {
+    padding: 40px 80px;
+    text-align: center;
+    margin: 0 auto;
+    max-width: 50ch; }
+    .slideshow.testimonials blockquote small {
+      display: block;
+      font-size: .75em;
+      margin-top: 16px; }
+      .slideshow.testimonials blockquote small:before {
+        content: '- '; }
+
+.border-top {
+  border-top: 1px solid #c2c2c2;
+  padding-top: 60px; }
+
+/*  FONTS  */
+body {
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 17px; }
+
+h1, h2, h3, h4, .preheader {
+  font-family: "Merriweather Sans", sans-serif;
+  font-weight: 400;
+  line-height: 1.2;
+  margin-bottom: .5em;
+  text-transform: none; }
+
+h1, .h1 {
+  font-size: 2.5em; }
+
+.content h1, .content h2, .content h3, .content h4 {
+  font-family: "Merriweather Sans", sans-serif;
+  font-weight: 400;
+  line-height: 1.2;
+  margin-bottom: .5em;
+  color: #343235; }
+
+.content h2 {
+  font-size: 1.5em;
+  text-transform: none;
+  letter-spacing: .05em; }
+
+.content h3 {
+  font-size: 1.25em; }
+
+.preheader,
+h1.preheader {
+  text-transform: uppercase;
+  letter-spacing: .125em;
+  font-weight: 300;
+  font-size: .825em; }
+
+.content .main ol,
+.content .main p,
+.content .main ul,
+.content ol,
+.content p,
+.content ul {
+  font-size: 1em;
+  line-height: 1.5;
+  color: #343235;
+  margin: 0 0 24px; }
+
+.btn,
+.content .btn {
+  font-family: "Merriweather Sans", sans-serif;
+  color: white;
+  font-weight: 400;
+  background: #1b4d56; }
+  .btn:hover,
+  .content .btn:hover {
+    background: #343235; }
+
+/*  HEADER  */
+header #main-nav {
+  background: #343235; }
+
+header .header-top .logo {
+  padding: 10px 0 20px; }
+
+header .wrapper {
+  max-width: none; }
+
+header nav .wrapper > ul > li.active > a,
+header nav .wrapper > ul > li.over > a,
+header nav .wrapper > ul > li > a:hover {
+  color: #f88c1a; }
+
+@media screen and (min-width: 810px) {
+  header nav .wrapper > ul.main > li {
+    margin: 4px 0 0; }
+    header nav .wrapper > ul.main > li:first-child {
+      border-right: 1px solid white; }
+    header nav .wrapper > ul.main > li > a {
+      padding: 3px 1.75em 5px; } }
+
+/*  HOME  */
+.home-text-banner .home-container,
+.subpage-text-banner .home-container {
+  background: #1b4d56; }
+
+.home-split-banner,
+.home-text-banner,
+.subpage-text-banner {
+  background: #1b4d56;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; }
+  .home-split-banner .btn,
+  .home-text-banner .btn,
+  .subpage-text-banner .btn {
+    background: #f88c1a;
+    color: black; }
+    .home-split-banner .btn:hover,
+    .home-text-banner .btn:hover,
+    .subpage-text-banner .btn:hover {
+      color: white;
+      background: black; }
+
+.slideshow.testimonials blockquote {
+  font-family: "Merriweather Sans", sans-serif;
+  font-weight: 300;
+  max-width: 45ch; }
+
+/*  FOOTER  */
+footer {
+  font-family: "Merriweather Sans", sans-serif; }
+  footer .main-footer .col1 img {
+    margin: 0 0 10px 0; }
+  footer p {
+    margin-bottom: .5em;
+    font-weight: 300; }
+  footer .main-footer .col3 ul li {
+    display: initial; }

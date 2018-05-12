@@ -1,0 +1,24 @@
+$orange :	#f88c1a;
+$gray: #343235;
+$gray-light: #c2c2c2;
+$blue: #1b4d56;
+
+$max_width:1024px;
+
+$duration: 2s;
+
+$font: 'Source Sans Pro', sans-serif;
+$header_font: 'Merriweather Sans', sans-serif;
+
+@mixin font-smoothing($value: antialiased) {
+  @if $value == antialiased {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  @else {
+    -webkit-font-smoothing: subpixel-antialiased;
+    -moz-osx-font-smoothing: auto;
+  }
+}
+
+@import "assets/sass/content_blocks";

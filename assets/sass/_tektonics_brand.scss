@@ -1,0 +1,161 @@
+/*  FONTS  */
+
+body {
+	font-family: $font;
+	font-size: 17px;
+}
+
+h1, h2, h3, h4, .preheader {
+	font-family: $header_font;
+	font-weight:400;
+	line-height: 1.2;
+	margin-bottom:.5em;
+	text-transform: none;
+}
+
+h1, .h1 {
+	font-size: 2.5em;
+}
+.content {
+	h1, h2, h3, h4 {
+		font-family: $header_font;
+		font-weight:400;
+		line-height: 1.2;
+		margin-bottom:.5em;
+		color: $gray;
+	}
+
+	h2 {
+		font-size: 1.5em;
+		text-transform: none;
+		letter-spacing: .05em;
+	}
+
+	h3 {
+		font-size: 1.25em;
+	}
+}
+
+.preheader,
+h1.preheader {
+	text-transform: uppercase;
+	letter-spacing: .125em;
+	font-weight: 300;
+	font-size: .825em;
+}
+
+.content .main,
+.content {
+	ol, 
+	p, 
+	ul {
+		font-size: 1em;
+    line-height: 1.5;
+    color: $gray;
+    margin: 0 0 24px;
+	}
+}
+
+.btn,
+.content .btn {
+  font-family: $header_font;
+  color: white;
+  font-weight:400;
+  background: $blue;
+
+  &:hover {
+  	background:$gray;
+  }
+}
+
+/*  HEADER  */
+
+header {
+	#main-nav {
+		background: $gray;
+	}
+
+	.header-top .logo {
+    padding: 10px 0 20px;
+	}
+
+	.wrapper {
+		max-width: none;
+	}
+}
+
+header nav .wrapper>ul>li {
+	&.active > a,
+	&.over > a, 
+	> a:hover {
+    color: $orange;
+	}
+}
+
+@media screen and (min-width: 810px) {
+
+	header nav .wrapper>ul.main>li {
+		margin: 4px 0 0;
+
+		&:first-child {
+			border-right: 1px solid white;
+		}
+
+		> a {
+	    padding: 3px 1.75em 5px;
+		}
+	}
+
+}
+
+/*  HOME  */
+
+.home-text-banner,
+.subpage-text-banner {
+	.home-container {
+		background: $blue;
+	}
+}
+
+.home-split-banner,
+.home-text-banner,
+.subpage-text-banner {
+  background: $blue;
+  @include font-smoothing;
+
+  .btn {
+  	background: $orange;
+  	color: black;
+
+  	&:hover {
+  		color:white;
+  		background:black;
+  	}
+  }
+}
+
+.slideshow.testimonials {
+	blockquote {
+	  font-family: $header_font;
+	  font-weight: 300;
+	  max-width: 45ch;
+	}
+}
+
+/*  FOOTER  */
+footer {
+	font-family: $header_font;
+
+	.main-footer .col1 img {
+    margin: 0 0 10px 0;
+	}
+
+	p {
+		margin-bottom: .5em;
+		font-weight: 300;
+	}
+
+	.main-footer .col3 ul li {
+	    display: initial;
+	}
+}
